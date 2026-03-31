@@ -1,4 +1,4 @@
-# 🐱🐭 Agent Waf — Tom & Jerry AI Desktop Companions
+# 🐱🐭  Tom & Jerry - Linux  AI Desktop Companions
 
 Two pixel-art AI characters live on your Linux desktop. **Tom** (a gray cat) handles system and productivity tasks. **Jerry** (a brown mouse) handles information and fun. Double-click either one to open their AI chat terminal.
 
@@ -59,7 +59,7 @@ sudo pacman -S python-gobject gtk3 vte3 python-pillow
 ### 2. Clone and set up
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agent-waf.git
+git clone https://github.com/EvaGeorg/tom-and-jerry.git
 cd agent-waf
 ```
 
@@ -108,9 +108,9 @@ python3 lil_companion.py
 
 ### The characters
 
-**Tom** walks the left half of your screen. His chat terminal launches `claude` in `~/.agent-waf/tom/`, where a `CLAUDE.md` file tells Claude to behave as a reliable, slightly sarcastic system agent. Ask him to check CPU usage, find files, run scripts, or clean up disk space.
+**Tom** walks the left half of your screen. His chat terminal launches `claude` in `~/.tom-and-jerry/tom/`, where a `CLAUDE.md` file tells Claude to behave as a reliable, slightly sarcastic system agent. Ask him to check CPU usage, find files, run scripts, or clean up disk space.
 
-**Jerry** walks the right half. His chat launches in `~/.agent-waf/jerry/`, where his `CLAUDE.md` makes Claude a curious, playful info agent. Ask him to summarize documents, explain concepts, brainstorm ideas, or tell you a fun fact.
+**Jerry** walks the right half. His chat launches in `~/.tom-and-jerry/jerry/`, where his `CLAUDE.md` makes Claude a curious, playful info agent. Ask him to summarize documents, explain concepts, brainstorm ideas, or tell you a fun fact.
 
 ### The banter
 
@@ -123,7 +123,7 @@ Tom and Jerry occasionally show speech bubbles that reference each other:
 ### Architecture
 
 ```
-agent-waf/
+tom-and-jerry/
 ├── lil_companion.py       # Main app — 2 pets, 2 chat windows, banter
 ├── generate_sprites.py    # Pixel art generator — Tom + Jerry
 ├── setup_agents.py        # Creates ~/.agent-waf/ personality files
@@ -132,7 +132,7 @@ agent-waf/
 │   └── jerry/             # 16 PNG frames
 └── README.md
 
-~/.agent-waf/              # Created by setup_agents.py
+~/.tom-and-jerry/              # Created by setup_agents.py
 ├── tom/
 │   └── CLAUDE.md          # "You are Tom, a system-focused agent..."
 ├── jerry/
@@ -150,10 +150,10 @@ Claude Code reads a `CLAUDE.md` file in its working directory for context. By la
 
 ```bash
 # Customize Tom's behavior
-nano ~/.agent-waf/tom/CLAUDE.md
+nano ~/.tom-and-jerry/tom/CLAUDE.md
 
 # Customize Jerry's behavior
-nano ~/.agent-waf/jerry/CLAUDE.md
+nano ~/.tom-and-jerry/jerry/CLAUDE.md
 ```
 
 ### Custom sprites
@@ -168,12 +168,12 @@ Each frame: 128×128 pixels, RGBA PNG, transparent background.
 
 ### Autostart on login
 
-Create `~/.config/autostart/agent-waf.desktop`:
+Create `~/.config/autostart/tom-and-jerry.desktop`:
 
 ```ini
 [Desktop Entry]
 Type=Application
-Name=Agent Waf
+Name=Tom and Jerry
 Comment=Tom & Jerry AI Desktop Companions
 Exec=python3 /path/to/agent-waf/lil_companion.py
 Hidden=false
