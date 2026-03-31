@@ -214,7 +214,7 @@ This is a **desktop pet with CLI wrapping**, not a true AI agent (yet). The char
 
 ## Credits
 
-Inspired by [lil agents](https://github.com/ryanstephen/lil-agents) by Ryan Stephen — tiny AI companions for macOS. Agent Waf is a Linux reimplementation with dual-character specialization using Python + GTK3.
+Inspired by [lil agents](https://github.com/ryanstephen/lil-agents) by Ryan Stephen — tiny AI companions for macOS. Tom and Jerry is a Linux reimplementation with dual-character specialization using Python + GTK3.
 
 ## License
 
