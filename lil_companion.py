@@ -28,7 +28,7 @@ except (ImportError, ValueError):
 # ─── Configuration ─────────────────────────────────────────────────────────
 
 SPRITE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sprites")
-AGENT_DIR = os.path.join(os.path.expanduser("~"), ".agent-waf")
+AGENT_DIR = os.path.join(os.path.expanduser("~"), ".tom-and-jerry")
 PET_SIZE = 128
 ANIMATION_FPS = 8
 IDLE_FPS = 3

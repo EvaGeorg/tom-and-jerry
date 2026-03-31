@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-Setup script for Agent Waf — creates the working directories and CLAUDE.md
+Setup script for Tom and Jerry — creates the working directories and CLAUDE.md
 personality files that give Tom and Jerry their brains.
 
 Run once after cloning:
     python3 setup_agents.py
 
 This creates:
-    ~/.agent-waf/tom/CLAUDE.md    — Tom's personality + system task focus
-    ~/.agent-waf/jerry/CLAUDE.md  — Jerry's personality + info/fun task focus
+    ~/.tom-and-jerry/tom/CLAUDE.md    — Tom's personality + system task focus
+    ~/.tom-and-jerry/jerry/CLAUDE.md  — Jerry's personality + info/fun task focus
 """
 
 import os
 
-BASE_DIR = os.path.join(os.path.expanduser("~"), ".agent-waf")
+BASE_DIR = os.path.join(os.path.expanduser("~"), ".tom-and-jerry")
 
 TOM_CLAUDE_MD = """# Tom — System & Productivity Agent
 
